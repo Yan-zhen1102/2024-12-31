@@ -1,0 +1,85 @@
+/* 背景圖片樣式 */
+.background-image {
+    background-image: url(C:/Users/朱妍蓁/Desktop/程式期中/image/星空);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    
+}
+/* 上方固定選單樣式 */
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(166, 202, 214, 0.7);
+    z-index: 10;
+    padding: 1rem 0;
+}
+
+.fixed-navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-navbar nav ul li {
+    margin: 0 1.5rem;
+}
+
+.fixed-navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.fixed-navbar nav ul li a:hover {
+    color: #7b8aff;
+}
+
+/* 透明疊層效果 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 背景透明度 */
+.overlay {    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(192, 224, 255, 0.107); /* 設定疊層顏色及透明度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 主標題 */
+.main-title {
+    font-size: 8rem; /* 調整標題字的大小 */
+    color: #ffffff; /* 字體顏色 */
+    text-align: center; /* 置中對齊 */
+    font-weight: bold; /* 加粗字體 */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* 加陰影讓字體更清晰 */
+    margin: 0;
+    padding: 20px;
+}
+/* 副標題 */
+.main {
+    font-size: 2.5rem; /* 主標題字體大小 */
+    color: #fff; /* 字體顏色 */
+    text-align: center; /* 置中對齊 */
+    font-weight: bold; /* 加粗字體 */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* 字體陰影 */
+    margin: 0; /* 移除預設外邊距 */
+    padding: 20px;
+}
+
+

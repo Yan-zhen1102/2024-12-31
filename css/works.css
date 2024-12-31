@@ -1,0 +1,109 @@
+/* 整體背景樣式 */
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* 內容框 */
+.background-image {
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    min-height: 50vh;
+}
+
+/* 上方新增圖片樣式 */
+.top-image img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+/* 固定選單樣式 */
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(166, 202, 214, 0.7);
+    z-index: 10;
+    padding: 1rem 0;
+}
+
+.fixed-navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-navbar nav ul li {
+    margin: 0 1.5rem;
+}
+
+.fixed-navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.fixed-navbar nav ul li a:hover {
+    color: #7b8aff;
+}
+
+
+/* 作品介紹區域 */
+#main-content {
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(172, 169, 215, 0.1);
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 單個作品區域 */
+.work {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.work img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.work h3 {
+    font-size: 22px;
+    color: #333;
+    margin: 0;
+}
+
+.work p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.6;
+}
+
+/* 調整最後一個作品的邊框 */
+.work:last-child {
+    border-bottom: none;
+}
